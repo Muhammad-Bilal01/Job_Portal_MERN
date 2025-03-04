@@ -1,0 +1,11 @@
+node-modules/
+.env
+
+
+# Dependency directories (common in MERN projects)
+/Backend/node_modules/
+/Backend/.env
+
+# Frontend
+/Frontend/node_modules/
+/Frontend/.env
