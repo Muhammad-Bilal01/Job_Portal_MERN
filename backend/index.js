@@ -4,6 +4,7 @@ import cookieParser from "cookie-parser"
 import cors from "cors"
 import { connectDB } from "./utils/db.js"
 import router from "./routes/user.route.js"
+import companyRouter from "./routes/company.route.js"
 
 const app = express();
 
@@ -20,6 +21,7 @@ app.use(cors(corsOption))
 
 // router
 app.use("/api/v1/user", router)
+app.use("/api/v1/company", companyRouter)
 
 
 // sample apis
